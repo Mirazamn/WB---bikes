@@ -1,0 +1,380 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+
+/* Header */
+header {
+    background-color: #000;
+    padding: 28px 0;
+}
+
+
+header > .flex {
+    justify-content: space-between;
+}
+
+
+.others {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+header nav ul li a {
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+header nav ul li a:hover {
+    color: #F57520;
+}
+
+
+/* Front Section */
+.face {
+    background-color: #000;
+    padding: 80px 0 236px 0;
+    background-image: url(./images/main-bg-img.svg);
+}
+
+
+.face .face-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+
+.face .face-txt h1 {
+    font-size: 96px;
+    font-weight: 700;
+    color: #fff;
+    width: 679px;
+}
+
+
+.face .face-txt p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    width: 645px;
+}
+
+
+.btn {
+    padding: 16px 45px;
+    background-color: #F57520;
+    border: none;
+    border-radius: 10px;
+    width: 180px;
+}
+
+
+.btn a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+/* Catalog */
+.catalog {
+    background-color: #777;
+    padding: 109px 0 157px 0;
+}
+
+
+.catalog .container {
+    width: 90%;
+}
+
+
+.catalog h2 {
+    font-size: 64px;
+    font-weight: 800;
+    color: #000;
+    text-align: center;
+    padding: 0 0 122px 0;
+}
+
+
+.cards {
+    flex-wrap: nowrap;
+    display: flex;
+    gap: 12px;
+}
+
+
+/* Card Styles */
+.catalog-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 26px;
+    width: fit-content;
+}
+
+
+.catalog-main-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.card {
+    background-color: #000;
+    padding: 29px 147px 131px 24px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    border-radius: 10px;
+    width: 450px;
+    height: 216px;
+}
+
+
+.card:hover {
+    background-color: #F57520;
+}
+
+
+.card h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+.catalog-cards .trade-in {
+    width: 400px;
+    padding: 80px 98px 322px 98px;
+    background-position-x: center;
+}
+
+
+.bike {
+    padding: 122px 865px 122px 80px;
+    width: 1305px;
+    height: 300px;
+}
+
+
+/* Track */
+.track {
+    background-color: #777;
+    padding: 0 0 120px 0;
+}
+
+
+.track .container {
+    width: 90%;
+}
+
+
+.track h2 {
+    font-size: 64px;
+    font-weight: 800;
+    color: #000;
+    text-align: center;
+    padding: 0 0 170px 0;
+}
+
+
+.track .track-cards {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* Article */
+.track .track-cards article {
+    width: 400px;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: #000;
+    padding: 0 0 80px 0;
+}
+
+
+.track .track-cards article h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    padding: 24px 30px 0 30px;
+}
+
+
+.track .track-cards article p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    width: 380px;
+    padding: 50px 30px 0 30px;
+}
+
+
+.track .track-cards article img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.track .track-cards article:hover {
+    background-color: #F57520;
+}
+
+
+.track .track-cards article:hover h3 {
+    color: #000;
+}
+
+
+.track .track-cards article:hover p {
+    color: #000;
+}
+
+
+/* Contacts */
+.contacts {
+    background-color: #F57520;
+    padding: 52px 0 40px;
+    background-image: url(./images/contacts-img.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+.contacts form h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+    padding: 0 0 80px 0;
+}
+
+
+.contacts form {
+    width: 610px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+
+.contacts form .user-info {
+    display: flex;
+    width: 620px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+
+.contacts form .user-info input {
+    padding: 10px 16px;
+    width: 302px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.contacts form .user-info input::placeholder {
+    color: #B3B3B3;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.contacts form textarea {
+    width: 620px;
+    height: 154px;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+}
+
+
+.contacts form button {
+    padding: 16px 245px;
+    border: none;
+    width: 620px;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    color: #F57520;
+}
+
+
+/* Address */
+/* Google Maps, Iframe was used */
+
+
+/* Footer */
+footer {
+    background-color: #000;
+    padding: 91px 0 70px;
+}
+
+
+footer img {
+    width: 85.73px;
+}
+
+
+footer > .flex {
+    gap: 355px;
+}
+
+
+footer > .flex > .flex {
+    gap: 91px;
+}
+
+
+.footer-flex ul h5 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    padding: 0 0 32px 0;
+}
+
+
+.footer-flex ul li a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+.footer-flex ul li a:hover {
+    color: #F57520;
+}
